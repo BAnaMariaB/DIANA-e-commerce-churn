@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Data folders
+data/raw/
+data/processed/
+data/external/
+
+# MLflow
+mlruns/
+
+# Python egg
+*.egg-info/
