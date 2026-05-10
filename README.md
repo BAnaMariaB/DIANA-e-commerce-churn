@@ -20,8 +20,8 @@ churn-prediction/
 │   └── inference/          # Model serving
 ├── models/                 # Saved model artifacts
 ├── docs/                   # Sphinx documentation
-├── tests/                  # Unit tests
-└── mlruns/                 # MLflow experiment outputs## Setup
+├── mlruns/                 # Unit tests
+└── tests/                 # MLflow experiment outputs## Setup
 
 ### Requirements
 - Python 3.12
