@@ -1,0 +1,19 @@
+name: diana-e-commerce-churn
+
+python_env: python_env.yaml
+
+entry_points:
+  prepare:
+    command: "python src/data_preparation/prepare.py"
+
+  features:
+    command: "python src/feature_engineering/features.py"
+
+  train:
+    parameters:
+      test_size: {type: float, default: 0.2}
+      random_state: {type: int, default: 42}
+    command: "python src/training/train.py"
+
+  full_pipeline:
+    command: "python src/data_preparation/prepare.py && python src/feature_engineering/features.py && python src/training/train.py"

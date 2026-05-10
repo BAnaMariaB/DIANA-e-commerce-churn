@@ -232,3 +232,4 @@ mlruns/
 
 # Python egg
 *.egg-info/
+docs/build/

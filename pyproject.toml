@@ -7,28 +7,34 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-dependencies = []
+dependencies = [
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.5.0",
+    "mlflow>=2.17.0",
+    "matplotlib>=3.9.0",
+    "seaborn>=0.13.2",
+    "openpyxl>=3.1.5",
+    "xgboost>=3.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.0.0",
+    "flake8>=7.0.0",
+    "pylint>=3.0.0",
+    "sphinx>=7.4.0",
+    "sphinx-rtd-theme>=2.0.0",
+    "pytest>=8.0.0"
+]
 
 [tool.poetry]
 package-mode = false
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.13"
-pandas = "^2.2.0"
-numpy = "^1.26.0"
-scikit-learn = "^1.5.0"
-mlflow = "^2.17.0"
-matplotlib = "^3.9.0"
-seaborn = "^0.13.2"
-
-[tool.poetry.group.dev.dependencies]
-black = "^24.0.0"
-flake8 = "^7.0.0"
-pylint = "^3.0.0"
-sphinx = "^7.4.0"
-sphinx-rtd-theme = "^2.0.0"
-pytest = "^8.0.0"
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 100
+exclude = [".venv", "__pycache__", "mlruns"]
