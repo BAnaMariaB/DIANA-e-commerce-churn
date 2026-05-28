@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "Tenure": 4,
+      "PreferredLoginDevice": "Mobile",
+      "CityTier": 3,
+      "WarehouseToHome": 6,
+      "PreferredPaymentMode": "Debit Card",
+      "Gender": "Female",
+      "HourSpendOnApp": 3,
+      "NumberOfDeviceRegistered": 3,
+      "PreferedOrderCat": "Mobile",
+      "SatisfactionScore": 2,
+      "MaritalStatus": "Single",
+      "NumberOfAddress": 9,
+      "Complain": 1,
+      "OrderAmountHikeFromlastYear": 11,
+      "CouponUsed": 1,
+      "OrderCount": 1,
+      "DaySinceLastOrder": 5,
+      "CashbackAmount": 159.93
+    }
+  ]
+}
