@@ -15,5 +15,11 @@ entry_points:
       random_state: {type: int, default: 42}
     command: "python src/training/train.py"
 
+  save_artifact:
+    command: "python -m src.training.save_artifact"
+
+  explain:
+    command: "python -m src.explainability.explain"
+
   full_pipeline:
-    command: "python src/data_preparation/prepare.py && python src/feature_engineering/features.py && python src/training/train.py"
+    command: "python src/data_preparation/prepare.py && python src/feature_engineering/features.py && python src/training/train.py && python -m src.training.save_artifact && python -m src.explainability.explain"
